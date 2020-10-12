@@ -1,0 +1,22 @@
+#!/bin/bash
+port=$2
+hostname=$1
+if [ -z "$2" ]; then
+	port="8083"
+fi
+output=$(curl -Is https://$hostname:$port/login --write-out '%{http_code}' -o /dev/null );
+
+if [ "$output" = "000" ]; then
+	echo "CRITICAL - Hestia not running"
+	exit  2
+else
+
+
+	if [ "$output" = "301" ]; then
+		 echo "OK - Hestia Working"
+		exit 0
+	else
+		 echo "Warning - $output"
+		exit 1
+	fi
+fi
