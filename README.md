@@ -8,5 +8,13 @@
 - Step 4: Install Icinga2 + Icigaweb2 (+ Director)
 - Step 5: Activiate templates + Request SSL
 
+
+For clients
+
+https://icinga.com/docs/icinga-2/latest/doc/02-installation/
+
+Packages for monitoring scripts used by me
+apt-get install libmonitoring-plugin-perl libwww-perl
+
 And Enjoy
 
