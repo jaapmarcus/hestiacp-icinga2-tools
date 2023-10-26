@@ -14,7 +14,7 @@ For clients
 https://icinga.com/docs/icinga-2/latest/doc/02-installation/
 
 Packages for monitoring scripts used by me
-apt-get install libmonitoring-plugin-perl libwww-perl
+apt-get install monitoring-plugins-standard libmonitoring-plugin-perl libwww-perl 
 
 And Enjoy
 
